@@ -1,3 +1,8 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+  "react/react-in-jsx-scope": "off", // React 17 及以上不需引入 React
+  "react/prop-types": "off", // 關閉 PropTypes 檢查（如果你使用 TypeScript 的話）
+  "react/jsx-uses-react": "off" // 避免 JSX 使用 React 的報錯
+}
 }

@@ -32,7 +32,13 @@ const Card = ({ href, title, des }: CardProps) => {
   return (
     <div className='m-4'>
       <div className='w-[190px] h-[265px] relative'>
-        <Image style={{"borderRadius": "5px"}} src={href} objectFit='cover' alt='products pic' fill />
+        <Image
+          style={{ borderRadius: '5px' }}
+          src={href}
+          objectFit='cover'
+          alt='products pic'
+          fill
+        />
       </div>
       <p className='mt-2 font-bold text-center'>{title}</p>
       <p>{des}</p>
